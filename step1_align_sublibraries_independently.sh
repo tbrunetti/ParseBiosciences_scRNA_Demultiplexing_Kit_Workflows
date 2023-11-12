@@ -18,12 +18,12 @@ module load gnu_parallel/20210322
 
 export TMPDIR=/scratch/alpine/brunetti@xsede.org/parse_gex_data_laurent_11072023/genomes/
 
-genomeIndexDir="/scratch/alpine/brunetti@xsede.org/parse_gex_data_laurent_11072023/genomes/"
+genomeIndexDir="/path/to/indexed/genomes/"
 chemVersion="V2"
-outDir="/scratch/alpine/brunetti@xsede.org/parse_gex_data_laurent_11072023/analysis/"
+outDir="/path/to/analysis/output/"
 threads=64
-parseSampleSheet="/scratch/alpine/brunetti@xsede.org/parse_gex_data_laurent_11072023/expdata/20231017_Parse_Biosciences_Evercode_WT_Mini_Sample_Loading_Table_V1.2.0.xlsm"
-fastqDir="/scratch/alpine/brunetti@xsede.org/parse_gex_data_laurent_11072023/expdata/"
+parseSampleSheet="/path/to/expdata/20231017_Parse_Biosciences_Evercode_WT_Mini_Sample_Loading_Table_V1.2.0.xlsm"
+fastqDir="/path/to/expdata/fastq/files/"
 
 
 # generate arguments file to pass to gnuparallel!  Since reading from file use :::: (4 colons) instead of ::: (3 colons to pass an array)
